@@ -1,106 +1,109 @@
-Projeto: Site e API de Cadastro
+# 📋 Site e API de Cadastro
 
-Descrição
+Projeto completo de autenticação com **frontend em React + Vite** e **backend com Node.js + Express**, utilizando banco de dados **MongoDB ou PostgreSQL** e autenticação via **JWT**.
 
-Este projeto consiste em um site e uma API para cadastro de usuários. O frontend foi desenvolvido com React e Vite, enquanto o backend utiliza Node.js e Express.
+---
 
-Tecnologias Utilizadas
+## 🚀 Tecnologias
 
-Frontend:
+### 🖥️ Frontend
+- React
+- Vite
+- Axios
+- React Router DOM
 
-React
+### 🛠️ Backend
+- Node.js
+- Express
+- MongoDB + Mongoose **ou** PostgreSQL + Sequelize
+- JWT (autenticação)
 
-Vite
+---
 
-Axios
+## 📁 Estrutura do Projeto
 
-React Router Dom
-
-Backend:
-
-Node.js
-
-Express
-
-MongoDB (com Mongoose) ou PostgreSQL (com Sequelize)
-
-JWT para autenticação
-
-Estrutura do Projeto
-
+```
 projeto/
-|-- frontend/
-|   |-- src/
-|   |   |-- components/
-|   |   |-- pages/
-|   |   |-- services/
-|   |   |-- App.js
-|   |   |-- main.jsx
-|   |-- package.json
-|   |-- vite.config.js
-|
-|-- backend/
-|   |-- src/
-|   |   |-- controllers/
-|   |   |-- models/
-|   |   |-- routes/
-|   |   |-- app.js
-|   |   |-- server.js
-|   |-- package.json
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── App.js
+│   │   └── main.jsx
+│   ├── package.json
+│   └── vite.config.js
+└── backend/
+    ├── src/
+    │   ├── controllers/
+    │   ├── models/
+    │   ├── routes/
+    │   ├── app.js
+    │   └── server.js
+    └── package.json
+```
 
-Instalação e Execução
+---
 
-Clonando o repositório
+## 🧪 Como rodar o projeto
 
+### 1. Clone o repositório
+
+```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
+```
 
-Configurando o Backend
+### 2. Configurar o Backend
 
+```bash
 cd backend
 npm install
-cp .env.example .env # Configurar variáveis de ambiente
+cp .env.example .env   # Configure as variáveis de ambiente
 npm start
+```
 
-Configurando o Frontend
+### 3. Configurar o Frontend
 
+```bash
 cd frontend
 npm install
 npm run dev
+```
 
-Endpoints da API
+---
 
-Criar Usuário
+## 🔐 Endpoints da API
 
-POST /api/users/register
+### Criar Usuário
 
-Body:
+`POST /api/users/register`
 
+```json
 {
   "name": "Nome do Usuário",
   "email": "usuario@email.com",
   "password": "senha123"
 }
+```
 
-Autenticar Usuário
+### Autenticar Usuário
 
-POST /api/users/login
+`POST /api/users/login`
 
-Body:
-
+```json
 {
   "email": "usuario@email.com",
   "password": "senha123"
 }
+```
 
-Contribuição
+---
 
-Fork este repositório
+## 🤝 Contribuindo
 
-Crie uma branch com sua feature (git checkout -b minha-feature)
-
-Commit suas mudanças (git commit -m 'Adiciona minha feature')
-
-Faça push para a branch (git push origin minha-feature)
-
-Abra um Pull Request
+1. Faça um fork do projeto  
+2. Crie sua branch (`git checkout -b minha-feature`)  
+3. Commit suas mudanças (`git commit -m 'feat: Minha nova feature'`)  
+4. Push para sua branch (`git push origin minha-feature`)  
+5. Abra um Pull Request
