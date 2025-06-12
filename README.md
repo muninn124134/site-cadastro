@@ -99,11 +99,3 @@ npm run dev
 ```
 
 ---
-
-## 🤝 Contribuindo
-
-1. Faça um fork do projeto  
-2. Crie sua branch (`git checkout -b minha-feature`)  
-3. Commit suas mudanças (`git commit -m 'feat: Minha nova feature'`)  
-4. Push para sua branch (`git push origin minha-feature`)  
-5. Abra um Pull Request
